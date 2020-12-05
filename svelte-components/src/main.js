@@ -1,4 +1,4 @@
-import App from './App.svelte';
+/* import App from './App.svelte';
 
 const app = new App({
 	target: document.body,
@@ -7,4 +7,10 @@ const app = new App({
 	}
 });
 
-export default app;
+export default app; */
+
+import HelloWorld from './HelloWorld.svelte';
+
+new HelloWorld ({
+	target: document.querySelector('#hello-world-container'),
+});
