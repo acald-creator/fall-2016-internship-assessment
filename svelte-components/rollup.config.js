@@ -34,13 +34,17 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: '../dist/svelte-bundle.js'
+//		file: 'public/build/bundle.js'
 	},
 	plugins: [
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
+			},
+			css: css => {
+				css.write('../dist/svelte-bundle.css');
 			}
 		}),
 		// we'll extract any component CSS out into
