@@ -1,107 +1,17 @@
-<!-- Login function -->
-<center><a class="popup-modal" href="#test-modal">Please Login</a></center>
-<div id="test-modal" class="white-popup-block mfp-hide">
-  <form class="form">
-    <fieldset class="form-group">
-      <label for="user">USERNAME:</label>
-      <input id="username" type="text" class="form-control"></fieldset>
-    <div class="form-actions" id="demo">
-      <input type="button" value="Submit" class="btn btn-primary btn-block" onclick="validate()">
-  </form>
-  </div>
-  <p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE = edge,chrome = 1">
+        <meta name='viewport' content='width=device-width,initial-scale=1'>
 
-<!--Start of grid, display is none -->
-<!-- Working on function to get panels to display based on login with user -->
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 150 }'>
-        <div class="grid-item admin">
-            <div class="panel1"><span class="header">Open</span><br/>
-                <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                <fieldset class="open">
-                    <form>
-                        <label>Estimated Hours: </label><input/><br/>
-                        <label>Projected Hourly Rate: </label><input/><br/>
-                        <label>Proposed Delivery Date: </label><input/><br/>
-                    </form>
-                </fieldset>
-                <div class="footer">
-                    <button class="submitOnClick">Submit Bid</button> <button class="buttonOpen">Details</button>
-                </div>
-            </div><div class="grid-item admin">
-                <div class="panel2"><span class="header">Details</span>
-                    <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section>Assigned to<br> Estimated Hours:<br> Actual Hours:<br> Proposed Hourly Rate:<br> Porposed Delivery Date:<br> Date Completed<br></section>
-                    <section>
-                        YYYYMMDD incididunt ut labore et dolore magna aliqua<br> YYYYMMDD incididunt ut labore et dolore magna aliqua<br> YYYYMMDD incididunt ut labore et dolore magna aliqua<br> YYYYMMDD incididunt ut labore et dolore magna aliqua</section>
-                    <div class="footer"><button class="buttonView">Details</button></div>
-                </div>
-            </div>
+        <title>Fall 2016 Intership Assessment</title>
 
-            <div class="grid-item zamyla">
-                <div class="panel3"><span class="header">In Progress</span>
-                    <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Due Date: YYYYMMDD</section>
-                    <fieldset class="progress">
-                        <form>
-                            <label>Turn-in Document: </label><input/><br/> Upload Final Products <button class="buttonUpload">Upload</button>
-                        </form>
-                    </fieldset>
-                    <div class="footer"><button class="buttonProgress">Details</button></div>
-                </div>
-            </div>
+        <link rel='stylesheet' href='/dist/bundle.css'>
 
-            <div class="grid-item zamyla">
-                <div class="panel4"><span class="header">Errors</span>
-                    <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="red">Error Code: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <div class="footer"><button class="buttonAccept">Accept</button> <button class="buttonErrors">Details</button></div>
-                </div>
-            </div>
+        <script defer src='/dist/svelte-bundle.js'></script>
+    </head>
 
-            <div class="grid-item mavuto">
-                <div class="panel5"><span class="header">Completed</span>
-                    <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="green">Date Completed: </section>
-                    <section class="green">Estimated Hours: </section>
-                    <section class="green">Actual Hours: </section>
-                    <button class="buttonGreen">Details</button>
-                </div>
-            </div>
-            <div class="grid-item mavuto">
-                <div class="panel3"><span class="header">In Progress</span>
-                    <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Due Date: YYYYMMDD</section>
-                    <fieldset class="progress">
-                        <form>
-                            <label>Turn-in Document: </label><input/><br/> Upload Final Products <button class="buttonUpload">Upload</button>
-                        </form>
-                    </fieldset>
-                    <div class="footer"><button class="buttonProgress">Details</button></div>
-                </div>
-            </div>
-            <div class="grid-item zamyla">
-                <div class="panel4"><span class="header">Errors</span>
-                    <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="red">Error Code: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <div class="footer"><button class="buttonAccept">Accept</button> <button class="buttonErrors">Details</button></div>
-                </div>
-            </div>
-              <div class="grid-item jules">
-                <div class="panel4"><span class="header">Errors</span>
-                    <section class="grey">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="grey">Requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <section class="red">Error Code: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-                    <div class="footer"><button class="buttonAccept">Accept</button> <button class="buttonErrors">Details</button></div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+    <body>
+    </body>
+</html>
