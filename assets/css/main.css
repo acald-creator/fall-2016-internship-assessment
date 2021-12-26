@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: linen;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+}
+
+.card {
+  background: hotpink;
+}
