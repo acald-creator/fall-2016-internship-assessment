@@ -1,0 +1,35 @@
+#admin,
+#zamyla,
+#mavuto,
+#jules {
+  width: 500px;
+}
+.open {
+  border: 0;
+  padding: 5px;
+  margin: 5px;
+  background: yellow;
+}
+.progress {
+  border: 0;
+  padding: 5px;
+  margin: 5px;
+}
+.grey {
+  background: #eee;
+  margin: 3px;
+  padding: 5px;
+}
+section {
+  padding: 3px;
+  margin: 5px;
+}
+.header {
+  color: #fff;
+}
+.red {
+  background: #ef9a9a;
+}
+.green {
+  background: #81c784;
+}

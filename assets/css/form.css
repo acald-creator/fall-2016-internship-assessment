@@ -1,0 +1,68 @@
+.form {
+    width: 30rm;
+}
+
+.form-group {
+    margin-bottom: 1.75rem;
+    overflow: auto;
+}
+
+.form-group label {
+    border-bottom: 2px solid #ccc;
+    color: #333;
+    width: 10rem;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+    position: relative;
+  }
+
+  .form-group.form-success label {
+    color: #4caf50 !important;
+    border-color: #4caf50 !important;
+  }
+  
+  .form-group.form-warning label {
+    color: #ff9800 !important;
+    border-color: #ff9800 !important;
+  }
+  
+  .form-group.form-error label {
+    color: #f44336 !important;
+    border-color: #f44336 !important;
+  }
+  
+  .form-control {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 0.5rem 0;
+    width: 20rem;
+    height: 38px;
+    background-color: transparent;
+  }
+  
+  .form-control:focus {
+    border-color: #555;
+  }
+  
+  .form-group.form-textarea label:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #fff;
+    right: -2px;
+    top: 0;
+    bottom: 0;
+  }
+
+  .form-actions {
+    margin-bottom: 1.75rem;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }

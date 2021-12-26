@@ -1,7 +1,17 @@
 @import "../../node_modules/normalize.css/normalize.css";
+@import "./grid.css";
+@import "./panel.css";
+@import "./button.css";
+@import "./form.css";
+@import "./style.css";
+
+:root {
+  --font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
 * {
   box-sizing: border-box;
+  text-rendering: geometricPrecision;
 }
 
 html,
@@ -13,16 +23,17 @@ body {
 
 body {
   background-color: linen;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.4;
+  word-wrap: break-word;
+  font-family: var(--font-family);
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: masonry;
-}
-
-.card {
-  background: hotpink;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3em;
 }
